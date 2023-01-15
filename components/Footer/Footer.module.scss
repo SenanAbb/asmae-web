@@ -1,0 +1,73 @@
+@import '../../styles/commons/colors';
+@import '../../styles/commons/mixins';
+
+.container {
+    height: 16rem;
+    background-color: $black;
+    width: 100%;
+    @include flex-column-center;
+    justify-content: space-evenly;
+
+    h1 {
+        color: $white;
+    }
+    
+    .footer_description {
+        font-size: .8rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .logo_container {
+        @include flex-column-center;
+    
+        img {
+            filter: brightness(0) invert(1);
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.links_container {
+    width: 80vw;
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.5rem;
+        font-weight: 400;
+        
+        .link {
+            p{
+
+                font-size: .8rem;
+            }
+            &:hover {
+                p {
+                    color: $primary;
+                }
+            }
+        }
+        
+        .active_link {
+            p{
+                color: $primary;
+            }
+        }
+    }
+
+    .separator {
+        border-bottom: 1px solid $gray_text;
+        width: 100%;
+        margin-top: .9rem;
+    }
+
+    .copyright {
+        p {
+            font-size: .6rem;
+            margin-top: .6rem;
+            text-align: center;
+        }
+    }
+}

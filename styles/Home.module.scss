@@ -1,0 +1,110 @@
+@import '../styles/commons/containers';
+@import '../styles/commons/colors';
+@import '../styles/commons/mixins';
+
+.first_section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, rgba(0,104,88,1) 0%, rgba(0,212,255,0) 100%), url('../public/assets/images/first-section-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    .info_container {
+        @include main_container;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .info_details {
+            margin-bottom: 3rem;
+            margin-left: 2rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 1;
+            
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .info_details_title {
+                color: $white;
+                font-weight: 300;
+                font-size: 2.4rem;
+            }
+            .info_details_name, .info_details_surname {
+                color: $white;
+                font-weight: 700;
+                font-size: 6rem;
+            }
+
+            .info_details_surname {
+                text-transform: uppercase;
+            }
+
+            .contact_button_container {
+                display: flex;
+                align-items: center;
+                margin-top: 5rem;
+                width: fit-content;
+
+                &:hover {
+                    cursor: pointer;
+
+                    img {
+                        transform: rotate(90deg);
+                    }
+                }
+
+                span {
+                    font-size: 1.4rem;
+                    color: $white;
+                }
+                
+                .contact_icon {
+                    display: grid;
+                    justify-content: center;
+                    border: 2px solid $white;
+                    border-radius: 100px;
+                    margin-left: .6rem;
+
+                    img {
+                        transition: all ease .2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner_container {
+    display: grid;
+    align-content: center;
+    padding: 0 14rem;
+    @include section_margins;
+
+    .banner {
+        @include flex-column-center;
+        min-height: 100%;
+
+        .title {
+            @include flex-column-center;
+            line-height: 3rem;
+            h1 {
+                margin-bottom: .2rem;
+            }
+
+            h3 {
+                margin-bottom: .4rem;
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $gray_text;
+    }
+}

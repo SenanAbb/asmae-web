@@ -1,0 +1,154 @@
+@import '../../styles/commons/containers';
+@import '../../styles/commons/mixins';
+@import '../../styles/commons/colors';
+
+.container {
+    @include main_container;
+    @include section_margins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100vw - 17px);
+    max-width: none;
+    background: $primary_extra_light url('../../public/assets/images/logo-color-opacity20.png') no-repeat center;
+    background-attachment: fixed;
+    background-size: 25%;
+    padding: 2rem 0;
+    position: relative;
+    overflow: hidden;
+
+    .logo {
+        position: absolute;
+        width: 60rem;
+        transform: translateX(-30rem) translateY(-4rem);
+        opacity: .1;
+        background-attachment: fixed;
+    }
+
+    h1, p {
+        text-align: center;
+    }
+    
+    h1 {
+        color: $primary;
+    }
+
+    p {
+        margin-top: 1rem;
+        max-width: 50%;
+        color: $gray_text;
+    }
+    
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    height: 20rem;
+    position: relative;
+    width: 70%;
+    
+    .carousel_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        
+        .carousel_item_title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $primary;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .carousel_item_description {
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+            max-width: 90%;
+        }
+    }
+
+    .carousel_left_arrow {
+        width: fit-content;
+    }
+
+    .carousel_right_arrow {
+        width: fit-content;
+    }
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    
+    .dot {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background-color: $primary_light;
+        opacity: .7;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    
+    .active_dot {
+        background-color: $primary;
+        opacity: 1;
+    }
+}
+
+.hover_left {
+    animation-name: shake_left;
+    animation-duration: .6s;
+}
+
+@keyframes shake_left {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}   
+
+.hover_right {
+    animation-name: shake_right;
+    animation-duration: .6s;
+}
+
+@keyframes shake_right {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(1rem);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fade_out {
+    animation-name: fade_out;
+    animation-duration: .6s;
+}
+
+@keyframes fade_out {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,76 @@
+@import '../../styles/commons/mixins';
+@import '../../styles/commons/colors';
+
+.article {
+    @include flex-column;
+    justify-self: flex-start;
+    background-color: $gray;
+    padding: 1rem;
+    width: 18rem;
+    transition: all .2s ease-in-out;
+
+    .date {
+        color: $gray_text_light;
+        font-size: .9rem;
+        margin-bottom: .2rem;
+    }
+
+    .title {
+        margin-bottom: 0;
+    }
+
+    .description {
+        color: $gray_text;
+        font-size: 1rem;
+        margin-top: 1rem;
+        width: inherit;
+    }
+
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+        
+    .read_more {
+        @include flex-row;
+        align-items: center;
+        margin-top: 1rem;
+        cursor: pointer;
+        width: fit-content;
+
+        span {
+            font-weight: 600;
+        }
+
+        img {
+            width: 1.6rem; 
+            margin-left: .4rem;   
+        }
+
+        &:hover {
+            img {
+                animation-name: bounce-right;
+                animation-duration: 1s;
+            }
+        }
+
+        @keyframes bounce-right {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(1rem);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    }
+    
+    
+
+    &:hover {
+        transform: scale(1.05);
+        border: 1px solid $primary;
+    }
+}

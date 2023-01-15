@@ -1,0 +1,78 @@
+@import '../../styles/commons/containers';
+@import '../../styles/commons/mixins';
+@import '../../styles/commons/colors';
+
+.container {
+    @include section-margins;
+    @include main-container;
+    margin-top: 10rem;
+
+    .content {
+        @include flex-row;
+        margin-bottom: 2rem;
+        gap: 6rem;
+
+        .text_container {
+            h3 {
+                margin-top: 1rem;
+            }
+
+            p {
+                margin-top: 1rem;
+            }
+
+            ul {
+                margin-top: 1rem;
+                padding-left: 0;
+                list-style: none;
+
+                a:hover {
+                    color: $primary;
+                }
+
+                li {
+                    margin-left: 1rem;
+                    color: $gray-text;
+                    p {
+                        margin-top: 0;
+                    }
+                }
+
+                li::before {
+                    content: '•';
+                    color: $primary;
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+
+            .more_info {
+                font-size: 1.2rem;
+                cursor: pointer;
+                width: fit-content;
+
+                &:hover {
+                    color: $primary-light;
+                }
+            }
+        }
+
+        .image_container {
+            display: grid;
+            justify-items: center;
+            place-content: center;
+
+            img {
+                object-fit: cover;
+                border-radius: .4rem;
+            }
+        }
+    }
+    
+    .contact_container {
+        margin-bottom: 1rem;
+        width: 70%;
+    }
+}

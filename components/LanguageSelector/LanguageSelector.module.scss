@@ -1,0 +1,14 @@
+@import '../../styles/commons/colors';
+
+.container {
+    cursor: pointer !important;
+ }
+
+.language_container {
+    display: flex;
+    width: 3rem;
+}
+
+.menu {
+    background-color: $primary;
+}

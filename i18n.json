@@ -1,0 +1,24 @@
+{
+  "locales": ["es", "en", "fr"],
+  "defaultLocale": "fr",
+  "pages": {
+    "*": ["navigation"],
+    "/": ["navigation", "home", "common"],
+    "/cabinet": ["cabinet", "common", "home"],
+    "/competences/[id]": ["competences", "home"]
+  },
+  "domain": [
+    {
+      "domain": "localhost:3000",
+      "defaultLocale": "es"
+    },
+    {
+      "domain": "localhost:3000",
+      "defaultLocale": "fr"
+    },
+    {
+      "domain": "localhost:3000",
+      "defaultLocale": "en"
+    }
+  ]
+}

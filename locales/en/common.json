@@ -1,0 +1,18 @@
+{
+  "graduate": "Graduate",
+  "name": "Asmae",
+  "surname": "Kirimov",
+  "contact": "Contact",
+  "contact_form_name_placeholder": "Name",
+  "contact_form_email_placeholder": "Email",
+  "contact_form_phone_placeholder": "Phone number",
+  "contact_form_message_placeholder": "Message",
+  "contact_form_submit": "Send message",
+  "more_info": "More information",
+  "last_articles": "Last articles",
+  "input_error_name": "Please, introduce your name",
+  "input_error_email": "Please, introduce a valid email",
+  "input_error_phone": "Please, introduce a valid phone number",
+  "input_error_message": "Please, introduce a message",
+  "contact_form_error": "An error has occurred, please try again later"
+}

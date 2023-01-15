@@ -1,0 +1,10 @@
+$content_container: 80vw;
+
+@mixin main_container {
+    max-width: $content_container;
+    margin: 0 auto;
+}
+
+@mixin section_margins {
+    margin: 4rem 0;
+}

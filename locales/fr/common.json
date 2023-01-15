@@ -1,0 +1,18 @@
+{
+  "graduate": "Maître",
+  "name": "Asmae",
+  "surname": "Kirimov",
+  "contact": "Nous contacter",
+  "contact_form_name_placeholder": "Nom",
+  "contact_form_email_placeholder": "Email",
+  "contact_form_phone_placeholder": "Numero de telephone",
+  "contact_form_message_placeholder": "Message",
+  "contact_form_submit": "Envoyer message",
+  "more_info": "Plus d'informations",
+  "last_articles": "Derniers articles",
+  "input_error_name": "S'il vous plaît, entrez votre nom",
+  "input_error_email": "S'il vous plaît, entrez votre email",
+  "input_error_phone": "S'il vous plaît, entrez votre numero de telephone",
+  "input_error_message": "S'il vous plaît, entrez votre message",
+  "contact_form_error": "Une erreur s'est produite lors de l'envoi du formulaire"
+}
