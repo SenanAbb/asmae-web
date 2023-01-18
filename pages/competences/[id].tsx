@@ -77,6 +77,8 @@ const Competences = () => {
                 <div className={styles.competence_title}>
                   <span>{`${t("home:competence1_title")}`}</span>
                 </div>
+                <p>{t("competences:competence1_predescription")}</p>
+                <br />
                 <p>{t("competences:competence1_description")}</p>
                 <ul>
                   <li>{t("competences:competence1_description_list1")}</li>
@@ -109,7 +111,7 @@ const Competences = () => {
                 </div>
                 <p>{t("competences:competence2_description")}</p>
                 <ul>
-                  <li>{t("competences:competence2_description_list1")}</li>
+                  <li style={{marginBottom: '1rem'}}>{t("competences:competence2_description_list1")}</li>
                   <li>{t("competences:competence2_description_list2")}</li>
                 </ul>
               </div>
@@ -133,6 +135,17 @@ const Competences = () => {
                   <span>{`${t("home:competence3_title")}`}</span>
                 </div>
                 <p>{t("competences:competence3_description")}</p>
+                <ul>
+                  <li>{t("competences:competence3_description_list1")}</li>
+                  <li>{t("competences:competence3_description_list2")}</li>
+                  <li>{t("competences:competence3_description_list3")}</li>
+                  <li>{t("competences:competence3_description_list4")}</li>
+                  <li>{t("competences:competence3_description_list5")}</li>
+                  <li>{t("competences:competence3_description_list6")}</li>
+                  <li>{t("competences:competence3_description_list7")}</li>
+                  <li>{t("competences:competence3_description_list8")}</li>
+                </ul>
+                <p>{t("competences:competence3_description_end")}</p>
               </div>
               <Image
                 src={
@@ -153,7 +166,12 @@ const Competences = () => {
                 <div className={styles.competence_title}>
                   <span>{`${t("home:competence4_title")}`}</span>
                 </div>
-                <p>{t("competences:competence4_description")}</p>
+                <p style={{marginBottom: '1rem'}}>{t("competences:competence4_description")}</p>
+                <p>{t("competences:competence4_description2")}</p>
+                <ul>
+                  <li style={{marginBottom: '1rem'}}>{t("competences:competence4_description_list1")}</li>
+                  <li>{t("competences:competence4_description_list2")}</li>
+                </ul>
               </div>
               <Image
                 src={
@@ -161,8 +179,8 @@ const Competences = () => {
                     .src
                 }
                 alt="competence4"
-                width={500}
-                height={500}
+                width={1000}
+                height={1000}
                 className={styles.competence4_image}
               />
             </div>
