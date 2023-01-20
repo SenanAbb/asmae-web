@@ -18,8 +18,8 @@ const Competences = () => {
       { id: "1", title: t("home:competence1_title") },
       { id: "2", title: t("home:competence2_title") },
       { id: "3", title: t("home:competence3_title") },
-      { id: "4", title: t("home:competence4_title") },
-      { id: "5", title: t("home:competence5_title") },
+      // { id: "4", title: t("home:competence4_title") },
+      // { id: "5", title: t("home:competence5_title") },
     ];
 
     return links.map((link) => {
