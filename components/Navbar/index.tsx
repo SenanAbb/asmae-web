@@ -56,8 +56,8 @@ const Navbar = () => {
               <Link href="/competences/1">{t("home:competence1_title")}</Link>
               <Link href="/competences/2">{t("home:competence2_title")}</Link>
               <Link href="/competences/3">{t("home:competence3_title")}</Link>
-              <Link href="/competences/4">{t("home:competence4_title")}</Link>
-              <Link href="/competences/5">{t("home:competence5_title")}</Link>
+              {/* <Link href="/competences/4">{t("home:competence4_title")}</Link> */}
+              {/* <Link href="/competences/5">{t("home:competence5_title")}</Link> */}
             </div>
           </div>
           <div
