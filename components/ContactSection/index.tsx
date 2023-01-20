@@ -34,6 +34,15 @@ const ContactSection = React.forwardRef(
               />
               <span>{t("home:email")}</span>
             </div>
+            <div className={styles.info_email}>
+              <Image 
+                src={icons.location}
+                alt="Location icon"
+                width={50}
+                height={50}
+              />
+              <span>{t("home:location")}</span>
+            </div>
           </div>
         </div>
         <div className={styles.separator_container}>

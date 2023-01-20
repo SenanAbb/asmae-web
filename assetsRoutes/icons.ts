@@ -16,6 +16,7 @@ const icons: any = {
     check: '/assets/icons/check.svg',
     telephone: '/assets/icons/telephone.svg',
     email: '/assets/icons/email.svg',
+    location: '/assets/icons/location.svg',
 }
 
 

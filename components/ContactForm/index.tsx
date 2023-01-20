@@ -12,6 +12,7 @@ const ContactForm = () => {
   const [phone, setPhone] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [loading, setLoading] = useState<boolean>(false);
+  const [success, setSuccess] = useState<boolean>(false);
   const [errors, setErrors] = useState<string[]>([]);
 
   const handleFormDataChange = (e: any) => {
@@ -67,11 +68,13 @@ const ContactForm = () => {
         setEmail("");
         setPhone("");
         setMessage("");
+        setSuccess(true);
       } else {
         setLoading(false);
         setErrors([...errors, "fetch_error"]);
         setInterval(() => {
           setErrors(errors.filter((error) => error !== "fetch_error"));
+          setSuccess(false);
         }, 5000);
       }
     });
@@ -146,9 +149,14 @@ const ContactForm = () => {
           message === ""
         }
       />
-      {errors.includes("fetch_error") && <span className={styles.error}>
-        {t("common:contact_form_error")}
-      </span>}
+      {errors.includes("fetch_error") && (
+        <span className={styles.error}>{t("common:contact_form_error")}</span>
+      )}
+      {success && (
+        <span className={styles.success}>
+          {t("common:contact_form_success")}
+        </span>
+      )}
     </form>
   );
 };

@@ -14,5 +14,5 @@
   "input_error_email": "Please, introduce a valid email",
   "input_error_phone": "Please, introduce a valid phone number",
   "input_error_message": "Please, introduce a message",
-  "contact_form_error": "An error has occurred, please try again later"
-}
+  "contact_form_error": "An error has occurred, please try again later",
+  "contact_form_success": "Message sent correctly"}

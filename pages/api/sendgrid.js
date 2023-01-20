@@ -18,11 +18,12 @@ export default async (req, res) => {
             </div>`,
     };
 
-    await sendgrid.send(content).then((res) => {
+    await sendgrid.send(content).then((result) => {
       console.log("Email sent");
       res.status(200).json({ success: true });
     });
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
+    res.status(500).json({ sucess: false, error });
+    console.log(error);
   }
 };

@@ -14,5 +14,6 @@
   "input_error_email": "S'il vous plaît, entrez votre email",
   "input_error_phone": "S'il vous plaît, entrez votre numero de telephone",
   "input_error_message": "S'il vous plaît, entrez votre message",
-  "contact_form_error": "Une erreur s'est produite lors de l'envoi du formulaire"
+  "contact_form_error": "Une erreur s'est produite lors de l'envoi du formulaire",
+  "contact_form_sucess": "Message envoyé correctement"
 }
