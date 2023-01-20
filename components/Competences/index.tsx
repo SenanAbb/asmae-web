@@ -26,16 +26,16 @@ const Competences = () => {
       icon: icons.public,
       subtitle: t("home:competence3_subtitle"),
     },
-    {
-      title: t("home:competence4_title"),
-      icon: icons.health,
-      subtitle: t("home:competence4_subtitle"),
-    },
-    {
-      title: t("home:competence5_title"),
-      icon: icons.daily,
-      subtitle: t("home:competence5_subtitle"),
-    },
+    // {
+    //   title: t("home:competence4_title"),
+    //   icon: icons.health,
+    //   subtitle: t("home:competence4_subtitle"),
+    // },
+    // {
+    //   title: t("home:competence5_title"),
+    //   icon: icons.daily,
+    //   subtitle: t("home:competence5_subtitle"),
+    // },
   ];
 
   const ref_list = [

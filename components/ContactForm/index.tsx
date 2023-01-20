@@ -1,5 +1,5 @@
 import useTranslation from "next-translate/useTranslation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Button from "../Button";
 import styles from "./ContactForm.module.scss";
 import { emailValidation } from "../../utils/validations";
