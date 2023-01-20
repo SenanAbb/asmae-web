@@ -66,6 +66,8 @@ const Competences = () => {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest"></link>
+        <meta key="robots" name="robots" content="index,follow" />
+        <meta key="googlebot" name="googlebot" content="index,follow" />
       </Head>
       <main>
         <Navbar />
@@ -111,7 +113,9 @@ const Competences = () => {
                 </div>
                 <p>{t("competences:competence2_description")}</p>
                 <ul>
-                  <li style={{marginBottom: '1rem'}}>{t("competences:competence2_description_list1")}</li>
+                  <li style={{ marginBottom: "1rem" }}>
+                    {t("competences:competence2_description_list1")}
+                  </li>
                   <li>{t("competences:competence2_description_list2")}</li>
                 </ul>
               </div>
@@ -166,10 +170,14 @@ const Competences = () => {
                 <div className={styles.competence_title}>
                   <span>{`${t("home:competence4_title")}`}</span>
                 </div>
-                <p style={{marginBottom: '1rem'}}>{t("competences:competence4_description")}</p>
+                <p style={{ marginBottom: "1rem" }}>
+                  {t("competences:competence4_description")}
+                </p>
                 <p>{t("competences:competence4_description2")}</p>
                 <ul>
-                  <li style={{marginBottom: '1rem'}}>{t("competences:competence4_description_list1")}</li>
+                  <li style={{ marginBottom: "1rem" }}>
+                    {t("competences:competence4_description_list1")}
+                  </li>
                   <li>{t("competences:competence4_description_list2")}</li>
                 </ul>
               </div>

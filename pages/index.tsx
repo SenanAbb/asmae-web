@@ -48,6 +48,8 @@ export default function Home() {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest"></link>
+        <meta key="robots" name="robots" content="index,follow" />
+        <meta key="googlebot" name="googlebot" content="index,follow" />
       </Head>
       <main>
         <Navbar />
