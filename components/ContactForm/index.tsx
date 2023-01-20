@@ -69,6 +69,9 @@ const ContactForm = () => {
         setPhone("");
         setMessage("");
         setSuccess(true);
+        setInterval(() => {
+          setSuccess(false)
+        }, 4000 )
       } else {
         setLoading(false);
         setErrors([...errors, "fetch_error"]);
