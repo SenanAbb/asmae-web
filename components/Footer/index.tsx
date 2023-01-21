@@ -56,6 +56,10 @@ const Footer = ({ style }: any) => {
           <div className={styles.separator}></div>
           <div className={styles.copyright}>
             <p>© 2023 - {t("navigation:all_rights_reserved")}</p>
+            <p>-</p>
+            <Link href="/politique-confidentialite">
+              <p> {` ${t("navigation:politique_confidentialite")}`}</p>
+            </Link>
           </div>
         </div>
       </div>

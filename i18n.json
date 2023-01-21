@@ -5,7 +5,8 @@
     "*": ["navigation"],
     "/": ["navigation", "home", "common"],
     "/cabinet": ["cabinet", "common", "home"],
-    "/competences/[id]": ["competences", "home"]
+    "/competences/[id]": ["competences", "home"],
+    "/politique-confidentialite": ["navigation", "home"]
   },
   "domain": [
     {

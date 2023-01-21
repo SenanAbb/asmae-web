@@ -64,10 +64,18 @@
     }
 
     .copyright {
+        @include flex-row-center;
+        gap: 1rem;
         p {
-            font-size: .6rem;
+            font-size: .65rem;
             margin-top: .6rem;
             text-align: center;
+        }
+
+        a {
+            p:hover {
+                color: $primary;
+            }
         }
     }
 }
