@@ -31,6 +31,31 @@ const PolitiquePrivacite = () => {
         </div>
 
         <div className={styles.paragraph}>
+          <h3>
+            Identité du responsable du traitement des données à caractère
+            personnel
+          </h3>
+          <div className={styles.info}>
+            <p>
+              Le responsable du traitement des données personnelles collectées
+              sur Maître Asmae Kirimov est : Asmae Kirimov, avec le numéro de
+              TVA : (ci-après, Responsable du traitement). Kirimov, numéro de
+              TVA : (ci-après dénommé "le contrôleur de données"). Ses
+              coordonnées sont les suivantes :
+              <p>
+                <b>Adresse : </b>22 rue des Cordeliers, 64 000 Pau
+              </p>
+              <p>
+                <b>Numéro de téléphone du contact :</b> +33 641228153{" "}
+              </p>
+              <p>
+                <b>Mail: </b>asmaekirimov.avocat@gmail.com
+              </p>
+            </p>
+          </div>
+        </div>
+
+        <div className={styles.paragraph}>
           <h3>1- Nature des données collectées</h3>
           <div className={styles.info}>
             <p>
