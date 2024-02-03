@@ -6,6 +6,7 @@ const images: any = {
     articlePlaceholder: '/assets/images/article_placeholder.png',
     cabinetImage: '/assets/images/cabinet.png',
     cabinetImage2: '/assets/images/cabinet2.png',
+    cabinetImage3: '/assets/images/cabinet3.webp',
     compentence1: '/assets/images/competence1.png',
     compentence2: '/assets/images/competence2.png',
     compentence3: '/assets/images/competence3.png',

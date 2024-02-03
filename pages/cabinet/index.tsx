@@ -61,7 +61,7 @@ const Cabinet = () => {
             </div>
             <div className={styles.image_container}>
               <Image
-                src={images.cabinetImage2}
+                src={images.cabinetImage3}
                 alt="Cabinet"
                 width={500}
                 height={600}
