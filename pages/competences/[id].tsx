@@ -112,12 +112,6 @@ const Competences = () => {
                   <span>{`${t("home:competence2_title")}`}</span>
                 </div>
                 <p>{t("competences:competence2_description")}</p>
-                <ul>
-                  <li style={{ marginBottom: "1rem" }}>
-                    {t("competences:competence2_description_list1")}
-                  </li>
-                  <li>{t("competences:competence2_description_list2")}</li>
-                </ul>
               </div>
               <Image
                 src={
